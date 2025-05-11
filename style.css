@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+body{
+    background: black;
+    background-image: url(/src/img/fondo.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header .logo{
+    color:white;
+    font-size: 4em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgb(243, 124, 108);
+    border-radius: 5px;
+    padding: 0 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+}
+header .logo:hover{
+    color: rgb(243, 124, 108);
+    background: white;
+    transition: 1s;
+}
+header .navbar{
+    position: relative;
+    display: flex;
+}
+header .navbar li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navbar li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+header .navbar li a:hover{
+    border-bottom: 5px solid rgb(243, 124, 108);
+    padding: 2px;
+}
+/* Contenido Web*/
+.contenido{
+    position:relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenido .tituloBox{
+    position: relative;
+    max-width: 500px;
+    text-align: center;
+}
+.contenido .tituloBox h2{
+    font-size: 4.5em;
+    text-transform: uppercase;
+    color: white;
+}
+.contenido .tituloBox h2 span{
+    background: rgb(243, 124, 108);
+    color: white;
+    padding: 0 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    border-radius: 20px;
+}
+.contenido .tituloBox p{
+    font-size: 1.8em;
+    line-height: 1.5;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+}
+.contenido .quiensoy{
+    padding: 25px 25px;
+    min-height: 350px;
+    min-width: 650px;
+    background-color:rgba(26, 25, 25, 0.836);
+   border-radius: 20px;
+}
+.contenido .quiensoy h3{
+    color: rgb(255, 255, 255);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.contenido .quiensoy p{
+    font-size: 1.5em;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+    width: 600px;
+
+}
+.contenido .tituloBox a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(243, 124, 108);
+    background: white;
+    padding: 10px 20px;
+    margin: left 30px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.contenido .tituloBox a:hover{
+    color:white;
+    background: rgb(243, 124, 108);
+    transition: 0.5s;
+}
+.contenido .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 1900px;
+  /*   margin-top: -50px; */
+    z-index: -5;
+}
+.contenido .imgBox img{
+    height: 80vh;
+}
+.contenido .imgBox .img:hover{
+    height: 80vh;
+}
+.proyectBox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.tituloProyecto{
+    margin-top: 100px;
+    color: white;
+    font-size: 3rem;
+}
+.proyectos{
+    background-color: rgba(26, 25, 25, 0.836);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 700px;
+    border-radius: 10px;
+    border: solid 5px rgb(243, 124, 108);
+    margin-top: 15px;
+    padding: 10px 10px;
+}
+.proyectos h2{
+    font-size: 2rem;
+   color: rgb(243, 124, 108);
+   margin: 5px 5px;
+
+}
+.proyectos img{ 
+    max-width: 600px;
+    padding-left: 50px;
+ }
+.proyectos p{
+    color: white;
+ 
+ }
+ .proyectos a{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(243, 124, 108);
+ 
+ }
+ .proyectos a:hover{
+    color: rgb(255, 30, 0);
+ 
+ }
+/* Copyright */
+.copyright{
+    position: absolute;
+    bottom: 0px;
+    left: 800px;
+    margin-bottom: 20px;
+    padding: 0 100px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.copyright p{
+    color: white;
+    text-align: center;
+    margin-left: 100px;
+
+}
+/* Redes Sociales*/
+.redesSociales{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 30px;
+    list-style: none;
+}
+.redesSociales li{
+    padding: 10px;
+}
+.redesSociales li a{
+    color: white;
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+.redesSociales li:hover a{
+    color: rgb(243, 124, 108);
+
+}
+/* FORMULARIO CONTACTO */
+.formulario-titulo{
+    color: white;
+    margin: 10px 50px;
+}
+.formulario-contacto {
+    width:800px;
+    min-width: 400px;
+    max-width: 1500px;
+    margin: 100px auto;
+    padding: 2rem;
+    background-color: rgba(26, 25, 25, 0.836);
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.formulario-contacto fieldset {
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.formulario-contacto legend {
+    
+    font-weight: bold;
+    color: white;
+    padding: 0 0.5rem;
+}
+
+.formulario-contacto label {
+    display: block;
+    margin-top: 0.5rem;
+    color: white;
+    font-weight: 500;
+}
+
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="email"],
+.formulario-contacto input[type="telf"],
+.formulario-contacto input[type="date"],
+.formulario-contacto select,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: #111;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+}
+
+.formulario-contacto textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+
+.formulario-contacto .enviar,
+.formulario-contacto .borrar {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.formulario-contacto .enviar:hover,
+.formulario-contacto .borrar:hover {
+    background-color: white;
+    color: black;
+}
+

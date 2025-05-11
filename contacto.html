@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Libreria iconod de ionic-->
+    <script type="module"src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" ></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html" class="logo">Xavier Valverde</a>
+        <ul class="navbar">
+            <li><a href="/quiensoy.html">Quién soy</a></li>
+            <li><a href="cv.html" target="_blank">CV</a></li>
+            <li><a href="/proyectos.html">Proyectos destacados</a></li>
+            <li><a href="/contacto.html">Contacto</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <div class="formulario-contacto">
+            <h2 class="formulario-titulo">CONTACTA CONMIGO</h2>
+            <form enctype="multipart/form-data" action="#" method="POST">
+                <fieldset>
+                    <legend>Tus datos de contacto:</legend>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="web">Teléfono de contacto:</label>
+                    <input type="telf" id="telf" name="telf">
+                </fieldset>
+
+                <fieldset>
+                    <legend>MENSAJE</legend>
+                    <label for="titulo">Motivo del mensaje</label>
+                    <input type="text" id="titulo" name="titulo" required>
+
+                    <label for="descripcion">Escribe aquí tu mensaje:</label>
+                    <textarea id="descripcion" name="descripcion" rows="20" placeholder="¿Qué puedo hacer por ti?" required></textarea>
+
+                    <label for="contestar">¿Cómo prefieres que contacte contigo?:</label>
+                    <select id="contestar" name="contestar">
+                        <option value="correo">Correo electrónico</option>
+                        <option value="telefono">Teléfono</option>
+                        <option value="otro">Otro método de contacto</option>
+                    </select>
+
+                <fieldset>
+                    <legend>¿Qué otro método de contacto?
+                        </legend>
+                    <label for="comentarios">En el caso de que hayas elegido "Otro método" para contactar contigo, por favor especifica el método en la siguiente sección:</label>
+                    <textarea id="comentarios" name="comentarios" rows="3"></textarea>
+                </fieldset>
+
+                <button type="submit" class="enviar">ENVIAR</button>
+                <button type="reset" class="borrar">BORRAR TODO</button>
+            </form>         
+        </div>
+
+        <div class="copyright">
+            <p>&copy; Web Personal creada para la materia de Lenguaje de Marcas <br> del CFGS DAM</p>
+        </div>
+        <ul class="redesSociales">
+            <li><a href="mailto:valcreativo@gmail.com" target="_blank">
+                <ion-icon name="mail-open-outline"></ion-icon>
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/xavier-valverde-fernandez" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+            <li><a href="https://github.com/XavierValverde" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a></li>
+        </ul>
+    </section>
+ </main>
+    
+</body>
+</html>
