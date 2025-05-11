@@ -149,7 +149,6 @@ header .navbar li a:hover{
     display: flex;
     justify-content: flex-start;
     padding-right: 1900px;
-  /*   margin-top: -50px; */
     z-index: -5;
 }
 .contenido .imgBox img{
@@ -181,7 +180,6 @@ header .navbar li a:hover{
     font-size: 2rem;
    color: rgb(243, 124, 108);
    margin: 5px 5px;
-
 }
 .proyectos img{ 
     max-width: 600px;
@@ -189,7 +187,6 @@ header .navbar li a:hover{
  }
 .proyectos p{
     color: white;
- 
  }
  .proyectos a{
     margin-top: 10px;
@@ -197,11 +194,9 @@ header .navbar li a:hover{
     justify-content: center;
     flex-direction: column;
     color: rgb(243, 124, 108);
- 
  }
  .proyectos a:hover{
     color: rgb(255, 30, 0);
- 
  }
 /* Copyright */
 .copyright{
@@ -213,13 +208,11 @@ header .navbar li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .copyright p{
     color: white;
     text-align: center;
     margin-left: 100px;
-
 }
 /* Redes Sociales*/
 .redesSociales{
@@ -260,37 +253,30 @@ header .navbar li a:hover{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
-
 .formulario-contacto form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
-
 .formulario-contacto fieldset {
     border: 1px solid white;
     border-radius: 8px;
     padding: 1rem;
 }
-
 .formulario-contacto legend {
-    
     font-weight: bold;
     color: white;
     padding: 0 0.5rem;
 }
-
 .formulario-contacto label {
     display: block;
     margin-top: 0.5rem;
     color: white;
     font-weight: 500;
 }
-
 .formulario-contacto input[type="text"],
 .formulario-contacto input[type="email"],
 .formulario-contacto input[type="telf"],
-.formulario-contacto input[type="date"],
 .formulario-contacto select,
 .formulario-contacto textarea {
     width: 100%;
@@ -302,13 +288,10 @@ header .navbar li a:hover{
     color: white;
     font-size: 1rem;
 }
-
 .formulario-contacto textarea {
     resize: vertical;
     min-height: 80px;
 }
-
-
 .formulario-contacto .enviar,
 .formulario-contacto .borrar {
     background-color: black;
@@ -321,10 +304,139 @@ header .navbar li a:hover{
     transition: all 0.3s ease;
     cursor: pointer;
 }
-
 .formulario-contacto .enviar:hover,
 .formulario-contacto .borrar:hover {
     background-color: white;
     color: black;
 }
 
+/* responsive */
+@media (max-width: 576px) {
+    header {
+        padding: 20px 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    header .logo {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    header .navbar {
+        flex-direction: column;
+    }
+    header .navbar li a {
+        font-size: 1.2em;
+        margin: 5px 0;
+    }
+    .contenido {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+    .contenido .tituloBox h2 {
+        font-size: 2.5em;
+    }
+    .contenido .tituloBox p {
+        font-size: 1em;
+    }
+    .contenido .quiensoy {
+        min-width: 100%;
+        padding: 20px;
+    }
+    .formulario-contacto {
+        width: 100%;
+        padding: 1rem;
+    }
+    .formulario-contacto input, .formulario-contacto textarea {
+        font-size: 0.9rem;
+    }
+    .proyectos {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .proyectos h2 {
+        font-size: 1.5rem;
+    }
+    .proyectos img {
+        max-width: 100%;
+    }
+    .redesSociales {
+        justify-content: center;
+    }
+    .redesSociales li a {
+        font-size: 2em;
+    }
+    .copyright {
+        text-align: center;
+        padding: 10px;
+    }
+}
+@media (min-width: 577px) and (max-width: 992px) {
+    header{
+        padding: 30px 75px;
+    }
+    header .logo {
+        font-size: 3em;
+    }
+    header .navbar li a {
+        font-size: 1.3em;
+    }
+
+
+    .contenido .tituloBox h2 {
+        font-size: 3.5em;
+    }
+    .contenido .tituloBox p {
+        font-size: 1.3em;
+    }
+    .contenido .quiensoy {
+        min-width: 450px;
+        padding: 20px;
+    }
+    .contenido .imgBox {
+        width: 500px;
+        padding-right: 100px;
+    }
+    
+    .proyectos {
+        width: 85%;
+        padding: 20px;
+        margin-top: 30px;
+    }
+    .proyectos h2 {
+        font-size: 1.8rem;
+    }
+    .proyectos img {
+        max-width: 100%;
+    }
+    
+    .formulario-contacto {
+        width: 80%;
+        padding: 1.5rem;
+    }
+    .formulario-contacto input[type="text"],
+    .formulario-contacto input[type="email"],
+    .formulario-contacto input[type="telf"],
+    .formulario-contacto select,
+    .formulario-contacto textarea {
+        font-size: 1rem;
+    }
+    
+    .redesSociales {
+        right: 10px;
+        bottom: 10px;
+        padding: 10px;
+    }
+    .redesSociales li {
+        padding: 8px;
+    }
+    .redesSociales li a {
+        font-size: 2.2em;
+    }
+    .copyright {
+        padding: 0 50px;
+        margin-bottom: 10px;
+    }
+    .copyright p {
+        font-size: 1rem;
+    }
+}
